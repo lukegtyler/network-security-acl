@@ -63,6 +63,6 @@ This lab was completed as part of Cisco Networking Academy coursework and adapte
 
 ## Files Included
 
-- [Download Packet Tracer Lab](lab/acl-lab.pkt)
+- [Download Packet Tracer Lab](lab/Tyler_8.5.13-packet-tracer---configure-extended-ipv4-acls---scenario-2.pka)
 - [View Configuration File](configs/acl-configs.txt)
 - Network topology screenshot (above)
