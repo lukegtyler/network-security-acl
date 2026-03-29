@@ -1,0 +1,26 @@
+Tyler_Packet Tracer 8.5.13
+
+
+en
+conf t
+ip access-list extended ACL
+deny tcp host 172.31.1.101 host 64.101.255.254 eq 80
+deny tcp host 172.31.1.101 host 64.101.255.254 eq 443
+deny tcp host 172.31.1.101 host 64.103.255.254 eq 80
+deny tcp host 172.31.1.101 host 64.103.255.254 eq 443
+deny tcp host 172.31.1.102 host 64.101.255.254 eq 21
+deny tcp host 172.31.1.102 host 64.103.255.254 eq 21
+deny icmp host 172.31.1.103 host 64.101.255.254
+deny icmp host 172.31.1.103 host 64.103.255.254
+permit ip any any
+end
+
+show access-lists
+show running-config | begin access-list
+conf t
+interface gigabitEthernet 0/0
+ip access-group ACL in
+end
+
+show run
+show ip access-lists
