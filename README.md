@@ -45,11 +45,12 @@ ip access-list extended ACL
  permit ip any any
 ```
 
-## Files Included
+## Testing & Validation
 
-* Packet Tracer Lab File
-* Configuration File
-* Network topology screenshot
+- Verified blocked HTTP/HTTPS traffic using browser tests
+- Confirmed FTP access was denied for specified host
+- Tested ICMP restrictions with ping commands
+- Ensured permitted traffic remained functional
 
 ## What I Learned
 
